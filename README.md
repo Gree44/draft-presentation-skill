@@ -1,5 +1,7 @@
 # draft-presentation — Claude Code Skill
 
+> **TL;DR** — Run `/draft-presentation` in Claude Code to go from a raw topic to a fully finished, designed presentation — with complete control over every slide along the way. Answer a few questions, approve a slide outline, refine each slide one at a time, and get a finished MARP presentation (Markdown Presentation format). Give this readme to claude to help installing all requirements.
+
 A Claude Code skill that walks you through creating a structured presentation draft slide by slide, then hands it off to `marp-slides` for generation.
 
 ## What it does
@@ -15,7 +17,7 @@ The draft format includes a Kernaussage (core message), visual layout descriptio
 
 ## Recommended workflow
 
-1. **Research first** — Run `/deep-research` on your topic before starting the draft. Pass the research output as your source material in Phase 1 of this skill. This ensures factual accuracy and gives Claude the depth needed to write complete speaker notes.
+1. **Research first** — Run `/deep-research` on your topic and ask Claude to save the full report to a `.md` file (e.g. `research.md`). Pass that file as your source material in Phase 1 of this skill. This ensures factual accuracy and gives Claude the depth needed to write complete speaker notes.
 
 2. **Draft** — Run `/draft-presentation` and work through the slides interactively.
 
@@ -27,7 +29,7 @@ The draft format includes a Kernaussage (core message), visual layout descriptio
 - [Claude Code](https://claude.ai/code) CLI or VS Code extension
 
 ### marp-slides skill
-This skill invokes `marp-slides` at the end of the process. You need that skill installed too — copy `.claude/skills/marp-slides/` from the [marp-slides repository](https://github.com/anthropics/claude-code-skills) or your own installation into the same `.claude/skills/` directory alongside this skill.
+This skill invokes `marp-slides` at the end of the process. You need that skill installed too — copy `.claude/skills/marp-slides/` from the [marp-slides repository](https://github.com/robonuggets/marp-slides) or your own installation into the same `.claude/skills/` directory alongside this skill.
 
 ### MARP (for rendering the output)
 - VS Code extension: [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)

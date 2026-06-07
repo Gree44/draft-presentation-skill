@@ -16,7 +16,7 @@ Ask the user these questions in a single message before touching any slide conte
 3. **Duration** — How many minutes? (determines slide count: ~1 slide/min as baseline)
 4. **Language** — Which language should the slides be in?
 5. **Assessment criteria** — Are there grading rubrics, mandatory slide elements (name, date, institution), or formatting rules?
-6. **Research material** — Is there a research document, deep-research output, or set of sources to base the draft on? If yes, ask the user to share it or describe the key facts.
+6. **Research material** — Is there a research document, deep-research output, or set of sources to base the draft on? If yes, ask the user to share it or describe the key facts. **Recommend** that if they haven't done research yet, they run `/deep-research` first and ask Claude to save the full report to a `.md` file (e.g. `research.md`) — that file becomes the knowledge base for this skill.
 7. **Theme** — Dark background with light text, or light background with dark text? (If assessment criteria specify a style, skip this question and follow the criteria.)
 8. **Existing structure** — Does the user have a rough outline, or should you propose one?
 
