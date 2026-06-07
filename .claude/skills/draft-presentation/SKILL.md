@@ -18,9 +18,10 @@ Ask the user these questions in a single message before touching any slide conte
 5. **Assessment criteria** — Are there grading rubrics, mandatory slide elements (name, date, institution), or formatting rules?
 6. **Research material** — Is there a research document, deep-research output, or set of sources to base the draft on? If yes, ask the user to share it or describe the key facts. **Recommend** that if they haven't done research yet, they run `/deep-research` first and ask Claude to save the full report to a `.md` file (e.g. `research.md`) — that file becomes the knowledge base for this skill.
 7. **Theme** — Dark background with light text, or light background with dark text? (If assessment criteria specify a style, skip this question and follow the criteria.)
-8. **Existing structure** — Does the user have a rough outline, or should you propose one?
+8. **Speaker notes** — What level of detail for speaker notes? Options: *None* (omit speaker notes entirely), *Bullet points* (short cues per talking point), *Full text* (complete spoken sentences as if speaking), or *Other* (describe what you need).
+9. **Existing structure** — Does the user have a rough outline, or should you propose one?
 
-Do not proceed to Phase 2 until you have answers to at least 1–5.
+Do not proceed to Phase 2 until you have answers to at least 1–5. Question 8 (speaker notes format) must also be answered before drafting any slide.
 
 ---
 
@@ -117,12 +118,23 @@ The title should answer "what does this slide show?" — not "what topic area do
 - No "Let's explore...", "As we can see...", "In summary..." in slide text
 - No bullet lists of 5+ identical-weight items — collapse into a diagram or table
 - No slide that is purely a repetition of the previous slide's content as "takeaways"
-- Speaker notes must be full spoken sentences, not bullet points
 
-**Speaker notes are mandatory and complete:**
-- Must be written as if the presenter is speaking, in the target language
-- Must contain every fact, nuance, and connection that is not on the slide visually
-- Must include the transition sentence to the next slide
+**Avoid AI writing giveaways in all text (slide content, titles, speaker notes):**
+- No em dashes (—) — use a comma, period, or restructure the sentence
+- No "It's not X, but Y" contrasts — state the positive claim directly
+- No snappy one-liner sentences standing alone for effect — integrate the point into context
+- No emojis unless the audience explicitly expects them
+- No buzzword inflation: avoid "leverage", "delve into", "pivotal", "game-changing", "robust", "holistic", "nuanced", "transformative" — use the plain word that names the actual thing
+- No symmetrical bullet points where every item has the same syntactic structure and length — real observations vary
+- No rhetorical question hooks: "But what does this really mean?", "So how do we solve this?" — state the answer, not the question
+- No throat-clearing phrases: "It's worth noting that...", "It should be mentioned...", "Let me walk you through..." — start with the substance
+- No artificial enthusiasm: "fascinating", "powerful", "remarkable", "exciting" without specific evidence — let the facts carry the weight
+
+**Speaker notes follow the format chosen in Phase 1:**
+- *None*: omit the `**Sprechernotizen:**` block entirely
+- *Bullet points*: short keyword cues per talking point, no full sentences
+- *Full text*: written as if the presenter is speaking, in the target language; must contain every fact, nuance, and connection not visible on the slide; must include the transition sentence to the next slide
+- *Other*: follow the user's custom description
 
 ---
 
