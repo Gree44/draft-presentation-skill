@@ -123,7 +123,7 @@ The title should answer "what does this slide show?" — not "what topic area do
 - No em dashes (—) — use a comma, period, or restructure the sentence
 - No "It's not X, but Y" contrasts — state the positive claim directly
 - No snappy one-liner sentences standing alone for effect — integrate the point into context
-- No emojis unless the audience explicitly expects them
+- No emojis. Icons are allowed if they serve a clear communicative purpose, but avoid decorative or "cute" icons that don't add information.
 - No buzzword inflation: avoid "leverage", "delve into", "pivotal", "game-changing", "robust", "holistic", "nuanced", "transformative" — use the plain word that names the actual thing
 - No symmetrical bullet points where every item has the same syntactic structure and length — real observations vary
 - No rhetorical question hooks: "But what does this really mean?", "So how do we solve this?" — state the answer, not the question
