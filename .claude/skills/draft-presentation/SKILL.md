@@ -90,9 +90,9 @@ The `## Folie N —` title is the **only navigation anchor** the audience sees. 
 **✗ Forbidden patterns:**
 - Opener/teaser titles that leave a question open: `## Folie 1 — Hook: 732 Bytes → root`
 - Wordplay or puns used as the title: `## Folie 2 — Name ist Programm`
-- The `<General>: <still vague detail>` anti-pattern: `## Folie 5 — Optimierung: Ein kritischer Commit`
 - Titles that sound like a section header in an essay, not a slide: `## Folie 11 — Analyse`
 - Titles that are too long and all follow the same `Topic: Subtitle elaborating but still not specific` pattern
+- Bad example: `Was CVE-2026-31431 für Systemdesign bedeutet`. Better: `Bedeutung für Systemdesign`
 
 The title should answer "what does this slide show?" — not "what topic area does it belong to?"
 
@@ -151,3 +151,21 @@ When invoking marp-slides, tell it explicitly:
 - The output file should be `presentation.md`
 - The design uses the theme the user specified in Phase 1 (dark or light); if unspecified, ask before invoking
 - Slide titles use the `### Gliederungspunkt` / `# Folientitel` two-level pattern where `###` names the section and `#` states the slide's specific content as a noun phrase — both derived directly from the `## Folie N — Title` in the draft
+
+---
+
+## Phase 5 — Visual QA
+
+After `marp-slides` finishes generating `presentation.md`, tell the user to run this command to export each slide as a PNG image:
+
+```
+npx @marp-team/marp-cli --html --images png slides.md 2>&1
+```
+
+Then tell them to open a **new chat** and paste the following prompt:
+
+> The images slides.x.png all correspond to a slide of a presentation. Check for visual flaws:
+> - Text being too small
+> - Anything overlapping
+> - An element being too close to another element, or too close to the sides / bottom
+> - Text wrapping to next lines incorrectly
